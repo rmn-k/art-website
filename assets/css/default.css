@@ -1,0 +1,84 @@
+body{
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: 200px 1fr;
+	grid-template-areas: "header header"
+			     "nav    article"
+			     "footer footer";
+	
+	/* following four lines are for applying the chosen google font over all contents of the body */	
+	font-family: "Source Sans 3", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+	
+	background-color: rgb(245, 245, 245);
+}
+
+header{
+	grid-area: header;
+	background-color: rgb(56, 66, 88);
+	padding: 16px;
+}
+
+header h1{
+	color: white;
+}
+
+article{
+	grid-area: article;
+	background-color: white;
+	padding: 16px;
+}
+
+article img{
+	max-width: 100%;  /* 100% of the container in which its placed */
+}
+
+nav{
+	grid-area: nav;
+}
+
+footer{
+	grid-area: footer;
+	background-color: rgb(200, 200, 200);
+	padding: 10px;
+}
+
+ul{
+	list-style-position: inside; /* this was important to be added. didnt understand completely*/
+	list-style-type: none;
+	/* padding: 0; */
+	margin: 5;
+	width: 200px;
+}
+
+/*
+li{
+	border-bottom: 1px solid black;
+}
+*/
+
+li a{
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;	
+	/* didnt work correctly --> border-bottom: 0px solid black; */
+	color: black;
+}
+
+/* upar humne header ke bad nav dia tha, yaha humne article dia */
+/* applies to content having width <=640px */
+@media (max-width:640px){
+	body{
+		grid-template-areas: "header"
+				     "article"
+				     "nav"
+				     "footer";
+		grid-template-columns: 1fr;
+	}
+	
+	nav > ul{
+		width: 100%;
+	}
+}
