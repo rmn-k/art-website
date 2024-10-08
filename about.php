@@ -2,7 +2,7 @@
 <?php require_once("assets/nav.php"); ?>
 
 		<article>
-			<h1>Homepage</h1>
+			<h1>About</h1>
 		</article>
 
 <?php require_once("assets/footer.php"); ?>

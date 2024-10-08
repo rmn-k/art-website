@@ -19,26 +19,3 @@
 		<header>
 			<h1>The Little Art Website</h1>
 		</header>
-
-		<article>
-			<h1>Title goes here</h1>
-			<p>This is a sample content. This is a sample content. This is a sample content. This is a sample content. This is a sample content. This is a sample content. This is a sample content. This is a sample content. This is a sample content. This is a sample content.</p>
-			<img src= "assets/images/vangogh.jpg"/>
-		</article>
-		
-		<nav>
-			<ul>
-				<li><a href= "homepage.php">Home</a></li>
-				<li><a href= "viewallart.php">Browse all art</a></li>
-				<li><a href= "viewbyartist.php">Browse by artist</a></li>
-				<li><a href= "viewbykeywords.php">Keywords</a></li>
-				<li><a href= "search.php">Search</a></li>
-				<li><a href= "about.php">About</a></li>
-			</ul>
-		</nav>
-
-		<footer>
-			&copy; 2020 The Little Art Website
-		</footer>
-	</body>
-</html>
